@@ -1,0 +1,101 @@
+callout_id,date,vehicle_type,fault_category,resolution_time_mins,resolved_onsite
+CO0001,2026-06-13,Car,Battery,85,True
+CO0002,2026-02-27,Van,Engine,154,True
+CO0003,2026-06-01,SUV,Battery,22,True
+CO0004,2026-02-25,Van,Battery,158,True
+CO0005,2026-07-03,Minibus,Lockout,71,False
+CO0006,2026-05-31,Motorbike,Battery,55,False
+CO0007,2026-03-29,Motorbike,Tyre Puncture,70,True
+CO0008,2026-01-27,Car,Lockout,39,True
+CO0009,2026-03-30,Minibus,Electrical,26,False
+CO0010,2026-05-18,Car,Lockout,35,True
+CO0011,2026-06-10,Minibus,Overheating,162,True
+CO0012,2026-06-30,Car,Battery,73,True
+CO0013,2026-01-21,Van,Engine,112,True
+CO0014,2026-04-27,Motorbike,Tyre Puncture,109,True
+CO0015,2026-02-23,Motorbike,Engine,170,True
+CO0016,2026-05-17,Van,Tyre Puncture,133,False
+CO0017,2026-03-11,Minibus,Fuel Issue,98,True
+CO0018,2026-02-28,Car,Overheating,117,True
+CO0019,2026-01-17,Van,Overheating,69,False
+CO0020,2026-04-12,SUV,Tyre Puncture,82,True
+CO0021,2026-03-05,Minibus,Electrical,164,False
+CO0022,2026-05-30,SUV,Overheating,71,True
+CO0023,2026-05-11,SUV,Engine,27,True
+CO0024,2026-02-09,Van,Lockout,167,True
+CO0025,2026-04-09,SUV,Brake Failure,150,True
+CO0026,2026-05-22,Car,Engine,152,True
+CO0027,2026-07-16,Motorbike,Engine,90,False
+CO0028,2026-02-10,SUV,Battery,82,True
+CO0029,2026-05-10,Car,Electrical,178,True
+CO0030,2026-02-09,Motorbike,Tyre Puncture,153,True
+CO0031,2026-06-03,Motorbike,Brake Failure,19,True
+CO0032,2026-04-03,Motorbike,Fuel Issue,29,True
+CO0033,2026-05-26,Car,Engine,139,True
+CO0034,2026-07-14,Minibus,Tyre Puncture,47,False
+CO0035,2026-05-21,Van,Electrical,150,False
+CO0036,2026-02-24,Minibus,Fuel Issue,94,False
+CO0037,2026-06-21,Motorbike,Brake Failure,147,False
+CO0038,2026-01-31,Van,Fuel Issue,31,True
+CO0039,2026-01-06,Minibus,Fuel Issue,165,True
+CO0040,2026-01-02,Car,Battery,73,True
+CO0041,2026-01-09,Motorbike,Engine,146,True
+CO0042,2026-03-13,SUV,Fuel Issue,153,True
+CO0043,2026-07-05,Minibus,Brake Failure,77,False
+CO0044,2026-07-26,SUV,Fuel Issue,39,True
+CO0045,2026-06-18,SUV,Overheating,123,False
+CO0046,2026-04-30,Car,Engine,30,False
+CO0047,2026-07-06,Motorbike,Engine,78,True
+CO0048,2026-02-18,Minibus,Brake Failure,50,False
+CO0049,2026-02-16,Motorbike,Brake Failure,78,True
+CO0050,2026-04-24,Minibus,Engine,27,True
+CO0051,2026-01-24,Van,Tyre Puncture,119,False
+CO0052,2026-05-04,Van,Lockout,30,True
+CO0053,2026-04-08,Car,Lockout,82,False
+CO0054,2026-03-15,SUV,Brake Failure,54,True
+CO0055,2026-03-17,Van,Battery,163,True
+CO0056,2026-07-11,Motorbike,Battery,27,False
+CO0057,2026-05-09,Minibus,Tyre Puncture,29,True
+CO0058,2026-02-17,Car,Engine,75,False
+CO0059,2026-01-31,Minibus,Fuel Issue,163,True
+CO0060,2026-06-08,Car,Lockout,164,True
+CO0061,2026-03-08,Van,Overheating,76,True
+CO0062,2026-04-12,Van,Electrical,132,True
+CO0063,2026-07-12,Car,Battery,132,True
+CO0064,2026-01-19,Minibus,Fuel Issue,144,True
+CO0065,2026-02-03,Motorbike,Engine,77,True
+CO0066,2026-03-14,Van,Brake Failure,154,True
+CO0067,2026-06-06,Minibus,Battery,156,True
+CO0068,2026-06-19,Car,Tyre Puncture,82,True
+CO0069,2026-01-28,Minibus,Tyre Puncture,84,True
+CO0070,2026-06-04,Van,Overheating,67,True
+CO0071,2026-05-10,SUV,Electrical,28,True
+CO0072,2026-06-12,SUV,Electrical,26,True
+CO0073,2026-03-27,Van,Electrical,56,False
+CO0074,2026-05-22,SUV,Battery,43,True
+CO0075,2026-06-26,Van,Battery,109,True
+CO0076,2026-04-21,Van,Battery,93,True
+CO0077,2026-07-23,Car,Overheating,68,True
+CO0078,2026-06-20,Car,Overheating,158,False
+CO0079,2026-06-08,Van,Fuel Issue,56,True
+CO0080,2026-04-16,Car,Tyre Puncture,100,False
+CO0081,2026-07-25,Van,Electrical,55,True
+CO0082,2026-04-08,Car,Brake Failure,71,True
+CO0083,2026-07-29,SUV,Overheating,93,True
+CO0084,2026-02-27,Car,Fuel Issue,117,True
+CO0085,2026-03-13,Car,Electrical,104,False
+CO0086,2026-06-23,Minibus,Overheating,22,True
+CO0087,2026-03-08,Van,Electrical,24,True
+CO0088,2026-06-02,SUV,Overheating,95,False
+CO0089,2026-06-05,Minibus,Engine,113,True
+CO0090,2026-03-07,Car,Lockout,15,True
+CO0091,2026-04-04,SUV,Engine,99,True
+CO0092,2026-06-19,Car,Electrical,144,True
+CO0093,2026-06-20,SUV,Overheating,118,True
+CO0094,2026-05-22,Van,Fuel Issue,122,False
+CO0095,2026-06-23,Van,Electrical,118,True
+CO0096,2026-03-19,Motorbike,Fuel Issue,125,True
+CO0097,2026-04-30,SUV,Brake Failure,69,False
+CO0098,2026-07-23,Van,Engine,87,True
+CO0099,2026-01-24,Van,Electrical,72,True
+CO0100,2026-02-07,Car,Battery,77,False
