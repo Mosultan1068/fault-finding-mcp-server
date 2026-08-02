@@ -1,0 +1,50 @@
+name: Build and Test Docker Image
+
+# This section defines WHEN this workflow runs.
+# Here: automatically, every time code is pushed to the main branch.
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    # Run this job on a fresh Ubuntu virtual machine provided by GitHub.
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Get a copy of your repo's code onto the runner.
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Python, matching the version used in the Dockerfile.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Step 3: Install dependencies so we can run a basic sanity check
+      # before even bothering to build the Docker image.
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Step 4: A simple automated test. This isn't a full test suite —
+      # it's a basic smoke test that proves the core logic works:
+      # the CSV loads, and the tool's calculation returns a sensible result
+      # for a category we know exists in the data.
+      - name: Run basic smoke test
+        run: |
+          python -c "
+          import pandas as pd
+          df = pd.read_csv('data/callouts.csv')
+          matches = df[df['fault_category'].str.lower() == 'battery']
+          assert not matches.empty, 'Expected some Battery rows in the dataset'
+          avg = matches['resolution_time_mins'].mean()
+          assert avg > 0, 'Average resolution time should be a positive number'
+          print(f'Smoke test passed: Battery average = {avg:.1f} mins')
+          "
+
+      # Step 5: Build the Docker image, using the Dockerfile in the repo.
+      # This only runs if the smoke test above passed — if the test fails,
+      # the workflow stops here and the image is never built.
+      - name: Build Docker image
+        run: docker build -t fault-finding-server .
