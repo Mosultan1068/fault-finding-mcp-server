@@ -36,7 +36,7 @@ jobs:
           python -c "
           import pandas as pd
           df = pd.read_csv('data/callouts.csv')
-          matches = df[df['fault_category'].str.lower() == 'anything']
+          matches = df[df['fault_category'].str.lower() == 'battery']
           assert not matches.empty, 'Expected some Battery rows in the dataset'
           avg = matches['resolution_time_mins'].mean()
           assert avg > 0, 'Average resolution time should be a positive number'
